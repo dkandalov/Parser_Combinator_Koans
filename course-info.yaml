@@ -1,0 +1,7 @@
+title: Parser Combinator Koans
+language: English
+summary: Koans for building parser combinator in Kotlin from scratch.
+programming_language: Kotlin
+content:
+- Basic parsers
+- Calculator parser

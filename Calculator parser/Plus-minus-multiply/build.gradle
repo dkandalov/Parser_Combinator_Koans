@@ -1,0 +1,9 @@
+dependencies {
+	compile project(":Basic_parsers-Parser_API")
+	compile project(":Basic_parsers-String_parser")
+	compile project(":Basic_parsers-Combine_parsers_in_order")
+	compile project(":Basic_parsers-First_matching_parser")
+	compile project(":Basic_parsers-Repeat_parser")
+	compile project(":Basic_parsers-Number_parser")
+	compile project(":Calculator_parser-Plus")
+}

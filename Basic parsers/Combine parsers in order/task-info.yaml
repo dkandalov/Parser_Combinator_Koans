@@ -1,0 +1,8 @@
+type: edu
+files:
+- name: src/Task2.kt
+  visible: true
+- name: test/Task2Tests.kt
+  visible: true
+- name: build.gradle
+  visible: false

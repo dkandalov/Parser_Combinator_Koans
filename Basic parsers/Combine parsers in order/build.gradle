@@ -1,0 +1,4 @@
+dependencies {
+	compile project(":Basic_parsers-Parser_API")
+	compile project(":Basic_parsers-String_parser")
+}

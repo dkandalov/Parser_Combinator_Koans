@@ -1,0 +1,4 @@
+type: theory
+files:
+- name: src/Task0.kt
+  visible: true
