@@ -1,6 +1,6 @@
 
-fun string(s: String): Parser<String> = object : Parser<String> {
+fun string(value: String): Parser<String> = object : Parser<String> {
     override fun parse(input: Input) =
-        if (!input.unprocessed.startsWith(s)) null
-        else Output(s, input.copy(offset = input.offset + s.length))
+        if (!input.unprocessed.startsWith(value)) null
+        else Output(value, input.copy(offset = input.offset + value.length))
 }

@@ -6,3 +6,5 @@ files:
   visible: true
 - name: build.gradle
   visible: false
+- name: task.md
+  visible: true

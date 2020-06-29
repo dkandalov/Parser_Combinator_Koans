@@ -6,4 +6,5 @@ dependencies {
 	compile project(":Basic_parsers-Apply_parser_several_times")
 	compile project(":Basic_parsers-Number_parser")
 	compile project(":Calculator_parser-Plus")
+	compile project(":Calculator_parser-Plus-minus-multiply_with_parens")
 }

@@ -1,7 +1,7 @@
 dependencies {
 	compile project(":Basic_parsers-Parser_API")
 	compile project(":Basic_parsers-String_parser")
-	compile project(":Basic_parsers-Combine_parsers_in_order")
-	compile project(":Basic_parsers-First_matching_parser")
-	compile project(":Basic_parsers-Repeat_parser")
+	compile project(":Basic_parsers-Apply_parsers_in_order")
+	compile project(":Basic_parsers-Apply_first_matching_parser")
+	compile project(":Basic_parsers-Apply_parser_several_times")
 }

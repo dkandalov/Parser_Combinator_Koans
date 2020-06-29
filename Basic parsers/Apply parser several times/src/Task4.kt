@@ -1,5 +1,5 @@
 
-fun <T> repeat(parser: Parser<T>): Parser<List<T>> = object : Parser<List<T>> {
+fun <T> onceOrMore(parser: Parser<T>): Parser<List<T>> = object : Parser<List<T>> {
     override fun parse(input: Input): Output<List<T>>? {
         var result = Output(emptyList<T>(), input)
         var output = parser.parse(result.nextInput)

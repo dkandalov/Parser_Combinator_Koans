@@ -10,7 +10,7 @@ class Task6Tests {
         PlusGrammar.parse("12 + 34")?.payload shouldEqual Plus(IntLiteral(12), IntLiteral(34))
     }
 
-    @Test fun `3 - add three numbers (right associative)`() {
+    @Test fun `3 - add three numbers`() {
         PlusGrammar.parse("1 + 2 + 3")?.payload.let {
             it shouldEqual Plus(
                 IntLiteral(1),

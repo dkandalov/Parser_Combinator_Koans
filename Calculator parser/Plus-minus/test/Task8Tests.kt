@@ -11,12 +11,12 @@ class Task8Tests {
         CalculatorGrammar.parse("12 + 34")?.payload shouldEqual Plus(IntLiteral(12), IntLiteral(34))
     }
 
-    @Test fun `3 - subtract three numbers (left associative)`() {
+    @Test fun `3 - subtract three numbers`() {
         CalculatorGrammar.parse("1 - 2 - 3")?.payload
             .toStringExpression() shouldEqual "((1 - 2) - 3)"
     }
 
-    @Test fun `4 - add three numbers (left associative)`() {
+    @Test fun `4 - add three numbers`() {
         CalculatorGrammar.parse("1 + 2 + 3")?.payload
             .toStringExpression() shouldEqual "((1 + 2) + 3)"
     }

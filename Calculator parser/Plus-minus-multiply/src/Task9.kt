@@ -4,7 +4,7 @@ object CalculatorGrammar {
     private val plusOrMinus =
         inOrder(
             ref { expression1 },
-            repeat(inOrder(
+            onceOrMore(inOrder(
                 oneOf(string(" + "), string(" - ")),
                 ref { expression1 }
             ))
@@ -21,15 +21,15 @@ object CalculatorGrammar {
     private val multiply =
         inOrder(
             number,
-            repeat(inOrder(string(" * "), number))
+            onceOrMore(inOrder(string(" * "), number))
         ).map { (first, rest) ->
-            rest.fold(first as Expression) { left, (_, right) ->
+            rest.fold(first as ASTNode) { left, (_, right) ->
                 Multiply(left, right)
             }
         }
 
     private val expression1 = oneOf(multiply, number)
-    private val expression: Parser<Expression> = oneOf(plusOrMinus, multiply, number)
+    private val expression: Parser<ASTNode> = oneOf(plusOrMinus, multiply, number)
 
     fun parse(s: String) = expression.parse(Input(s))
 }

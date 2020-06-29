@@ -6,7 +6,7 @@ class Task7Tests {
         MinusGrammar.parse("2 - 1")?.payload shouldEqual Minus(IntLiteral(2), IntLiteral(1))
     }
 
-    @Test fun `2 - subtract three numbers (left associative)`() {
+    @Test fun `2 - subtract three numbers`() {
         MinusGrammar.parse("1 - 2 - 3")?.payload.let {
             it shouldEqual Minus(
                 Minus(IntLiteral(1), IntLiteral(2)),
@@ -16,7 +16,7 @@ class Task7Tests {
         }
     }
 
-    @Test fun `3 - subtract five numbers (left associative)`() {
+    @Test fun `3 - subtract five numbers`() {
         MinusGrammar.parse("1 - 2 - 3 - 4 - 5")?.payload
             .toStringExpression() shouldEqual "((((1 - 2) - 3) - 4) - 5)"
     }
