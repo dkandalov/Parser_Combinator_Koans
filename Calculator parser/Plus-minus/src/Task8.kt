@@ -1,4 +1,4 @@
-object CalculatorGrammar {
+object PlusMinusGrammar {
 
     private val expression: Parser<ASTNode> = TODO()
 

@@ -1,7 +1,7 @@
 import org.junit.Test
 
 class Task4Tests {
-    private val parser = onceOrMore(string("foo"))
+    private val parser = oneOrMore(string("foo"))
 
     @Test fun `1 - no match`() {
         parser.parse(Input("")) shouldEqual null

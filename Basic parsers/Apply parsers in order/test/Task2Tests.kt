@@ -12,7 +12,7 @@ class Task2Tests {
         val parser = inOrder(string("foo"), string("bar"))
         val input = Input("foobar")
         parser.parse(input) shouldEqual Output(
-            payload = List2("foo", "bar"),
+            payload = Pair("foo", "bar"),
             nextInput = input.consumed()
         )
     }
@@ -21,7 +21,7 @@ class Task2Tests {
         val parser = inOrder(string("foo"), string("bar"), string("buz"))
         val input = Input("foobarbuz")
         parser.parse(input) shouldEqual Output(
-            payload = List3("foo", "bar", "buz"),
+            payload = Triple("foo", "bar", "buz"),
             nextInput = input.consumed()
         )
     }

@@ -1,8 +1,9 @@
 Hi!
 
-This course is a bunch of koans which can guide you through the process of creating parser combinator in Kotlin from scratch. 
+This is a bunch of koans which can guide you through the process of creating parser combinator in Kotlin from scratch. 
 
-This is by no means a course on parsers but more of a very quick intro into the subject. To start with, ask yourself the following questions (this is not a quiz, so not being sure about the answer is perfectly fine):
+This is by no means a course on parsers but more of a very quick intro into the subject. 
+To start with, ask yourself the following questions (this is not a quiz, so not being sure about the answer is perfectly fine):
  - What is a grammar? Context-free grammar?
  - What is a parser? Parser combinator?
  - What is "left recursion"?
