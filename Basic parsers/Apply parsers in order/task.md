@@ -1,4 +1,4 @@
-## Combine parsers in order
+## Apply parsers in order
 
 To complete this koan, implement `inOrder()` functions to return parser
 which sequentially uses `parser1`, `parser2` (and `parser3`) to process input.

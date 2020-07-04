@@ -1,4 +1,4 @@
-### Plus parser
+## Plus parser
 
 To complete this koan, assign to `PlusGrammar.expression` a parser which produces `IntLiteral` or `Plus`.
 This should be achievable by combining parsers from the previous koans.

@@ -1,4 +1,4 @@
-## Repeat parser
+## Apply parser several times
 
 To complete this koan, implement `oneOrMore()` function to return parser
 which applies the `parser` passed as an argument one or more times,

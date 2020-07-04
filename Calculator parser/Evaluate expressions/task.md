@@ -1,4 +1,4 @@
-## Evaluate expression
+## Evaluate expressions
 
 At this point you should have a simple parser and a way to evaluate expressions like `(1 + 2) * 3 - 4`.
 It shouldn't be too hard to add `Divide` operation or switch from `Int` to `BigDecimal`.
